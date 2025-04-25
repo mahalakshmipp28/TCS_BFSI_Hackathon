@@ -152,3 +152,29 @@ The following confusion matrix is evident for that:
 
 ![Screenshot 2025-04-25 224040](https://github.com/user-attachments/assets/a5940b29-264e-4cc4-a183-40e9fca7d555)
 
+**Correlation Heatmap Analysis**
+
+![Screenshot 2025-04-25 224121](https://github.com/user-attachments/assets/de53d791-5c9d-46a9-a68c-75e4624bbfef)
+
+A correlation heatmap was plotted to analyze the linear relationship between input features and the target variable ‘Risk’, which indicates the likelihood of credit default or non-default.
+
+**Observations**
+
+The heatmap displays Pearson correlation coefficients ranging from -1 to 1. A coefficient near 1 indicates a strong positive correlation, near -1 indicates a strong negative correlation, and around 0 indicates no correlation. The diagonal values are all 1.00, as each feature is perfectly correlated with itself.
+
+**Target Variable Correlation: ‘Risk’**
+
+The feature ‘Duration’ shows the highest negative correlation with the target variable ‘Risk’, having a correlation coefficient of -0.28. This implies that as the loan duration increases, the risk decreases, or vice versa, under the current dataset. Though the correlation is moderate, it suggests Duration is a notable predictor for classification.
+
+**Feature-to-Feature Correlations**
+
+‘Credit amount’ and ‘Duration’ are positively correlated (0.64):
+Longer loan durations tend to be associated with higher credit amounts.
+‘Job’ and ‘Credit amount’ show a weak positive correlation (0.29), indicating a mild trend where certain job types request larger credit amounts.
+Most other features show very low to negligible correlation with one another, which is beneficial as it reduces multicollinearity and helps in more robust model training.
+
+**Insights for Feature Selection**
+
+Features like ‘Age’, ‘Sex’, ‘Saving accounts’, ‘Checking account’, and ‘Purpose’ show minimal correlation with ‘Risk’ (near 0), indicating that these features alone may not be strong predictors of risk.
+However, they may still hold non-linear or interaction effects, which ensemble models like Gradient Boosting can capture.
+The low inter-feature correlations indicate that redundancy among features is minimal, supporting the use of all features in the initial training phase.
