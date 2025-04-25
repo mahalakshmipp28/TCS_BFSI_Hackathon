@@ -125,3 +125,9 @@ Good Credit Risk or Bad Credit Risk based on prediction.
 SHAP is used to explain why a specific prediction was made.
 A waterfall plot visualizes how each feature pushed the prediction toward good or bad risk.
 The top contributing features for that individual prediction are shown in a table for further interpretation.
+
+**Results and Inference:**
+
+![Screenshot 2025-04-25 224020](https://github.com/user-attachments/assets/00426361-e3b9-4d41-a9ee-c017222ae8f2)
+
+
