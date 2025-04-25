@@ -183,6 +183,26 @@ The low inter-feature correlations indicate that redundancy among features is mi
 
 ![Screenshot 2025-04-25 224322](https://github.com/user-attachments/assets/0180bb13-f6d6-44dd-a16b-077a5f1bd066)
 
+The figure above highlights the top 5 most influential features derived from the dataset in predicting credit risk using feature importance scores. These scores were computed based on the gain.
+
+**Interpretation:**
+
+Duration of credit emerges as the most significant factor, indicating that the length of credit repayment period has the highest predictive power for credit risk.
+Credit amount and Purpose are also strong predictors, reflecting that both the loan size and its intended use contribute meaningfully to risk assessment.
+Age and Housing type, while still relevant, have comparatively lower influence.
+This ranking aligns well with financial intuition—loan duration and amount typically correlate with default risk, while demographic and contextual features provide auxiliary information.
+
+**Hyperparameter Importance (XGBoost Tuning)**
+The bar graph illustrates the relative importance of XGBoost hyperparameters (based on F-score) during tuning:
+
+**Interpretation:**
+
+n_estimators (number of boosting rounds) plays the most critical role in model performance, indicating that ensemble size strongly influences generalization.
+
+max_depth has moderate influence; a depth of 3 suggests a trade-off between underfitting and overfitting.
+
+learning_rate had the least impact among the tuned parameters, which is expected due to its small value (0.01), allowing gradual learning.
+
 **Actionable insights and recommendations for improving the credit evaluation process**
 
 ![Screenshot 2025-04-25 224338](https://github.com/user-attachments/assets/3fe932d6-4ed2-404d-99a3-1525c142203a)
@@ -190,3 +210,21 @@ The low inter-feature correlations indicate that redundancy among features is mi
 **Feature Importance Graph:**
 
 ![Screenshot 2025-04-25 224409](https://github.com/user-attachments/assets/d2fa65da-9cb8-42f2-8b2f-5416a9611066)
+
+**Interpretation:**
+
+Credit amount holds the highest importance score (≈ 24.46), suggesting that the size of the loan requested by the applicant is the most critical factor in determining the level of credit risk. This aligns with practical financial insights, as larger credit amounts usually carry greater risk if repayment is uncertain.
+
+Duration, with an importance score of ≈ 10.92, also plays a vital role. Longer repayment periods may increase the chance of default due to prolonged financial exposure, which the model captures effectively.
+
+These importance scores are likely computed using internal metrics such as:
+
+Gain (the improvement in model performance brought by a feature),
+
+Weight (frequency a feature is used to split data across all trees), or
+
+SHAP (SHapley Additive exPlanations, if used).
+
+**Implication for Model Interpretability:**
+
+The result indicates that the model gives significant weight to financial variables directly tied to the loan's terms, highlighting its reliance on practical, high-risk indicators. The exclusion or lower ranking of other features suggests these variables either contribute less or are possibly correlated with the above top features.
