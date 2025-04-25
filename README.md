@@ -228,3 +228,14 @@ SHAP (SHapley Additive exPlanations, if used).
 **Implication for Model Interpretability:**
 
 The result indicates that the model gives significant weight to financial variables directly tied to the loan's terms, highlighting its reliance on practical, high-risk indicators. The exclusion or lower ranking of other features suggests these variables either contribute less or are possibly correlated with the above top features.
+
+**Predictions:**
+
+![Screenshot 2025-04-25 230930](https://github.com/user-attachments/assets/bc20807c-d583-4fb6-a0db-972722d25428)
+
+Image showing the applicant classifed as Good Credit Risk.
+
+![Screenshot 2025-04-25 231123](https://github.com/user-attachments/assets/803f97cf-2beb-41ab-8ae4-b922f7106962)
+
+Image showing the applicant classifed as Bad Credit Risk.
+
