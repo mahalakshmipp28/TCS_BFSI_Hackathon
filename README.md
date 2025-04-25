@@ -130,4 +130,20 @@ The top contributing features for that individual prediction are shown in a tabl
 
 ![Screenshot 2025-04-25 224020](https://github.com/user-attachments/assets/00426361-e3b9-4d41-a9ee-c017222ae8f2)
 
+The image of the classification implies that:
 
+True Negatives (TN): 180
+
+False Positives (FP): 0
+
+False Negatives (FN): 1
+
+True Positives (TP): 19
+
+This implies the model correctly identified:
+
+180 out of 180 negative class samples (label 0),
+
+19 out of 20 positive class samples (label 1),
+
+Only 1 false negative and no false positives.
