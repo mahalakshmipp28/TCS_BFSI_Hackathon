@@ -178,3 +178,15 @@ Most other features show very low to negligible correlation with one another, wh
 Features like ‘Age’, ‘Sex’, ‘Saving accounts’, ‘Checking account’, and ‘Purpose’ show minimal correlation with ‘Risk’ (near 0), indicating that these features alone may not be strong predictors of risk.
 However, they may still hold non-linear or interaction effects, which ensemble models like Gradient Boosting can capture.
 The low inter-feature correlations indicate that redundancy among features is minimal, supporting the use of all features in the initial training phase.
+
+**Factors influencing Credit Risk:**
+
+![Screenshot 2025-04-25 224322](https://github.com/user-attachments/assets/0180bb13-f6d6-44dd-a16b-077a5f1bd066)
+
+**Actionable insights and recommendations for improving the credit evaluation process**
+
+![Screenshot 2025-04-25 224338](https://github.com/user-attachments/assets/3fe932d6-4ed2-404d-99a3-1525c142203a)
+
+**Feature Importance Graph:**
+
+![Screenshot 2025-04-25 224409](https://github.com/user-attachments/assets/d2fa65da-9cb8-42f2-8b2f-5416a9611066)
