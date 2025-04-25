@@ -147,3 +147,8 @@ This implies the model correctly identified:
 19 out of 20 positive class samples (label 1),
 
 Only 1 false negative and no false positives.
+
+The following confusion matrix is evident for that:
+
+![Screenshot 2025-04-25 224040](https://github.com/user-attachments/assets/a5940b29-264e-4cc4-a183-40e9fca7d555)
+
